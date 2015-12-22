@@ -9,7 +9,7 @@ jdk:
 
 install: true
 
-script: ./kobaltw assembleInternalDebug
+script: ./kobaltw assembleInternalDebug --log 2
 
 branches:
   only:
