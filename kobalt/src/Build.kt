@@ -6,9 +6,12 @@ import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.retrolambda.*
 import com.beust.kobalt.plugin.java.*
 
-val pl = plugins("com.beust:kobalt-retrolambda:0.4")
+val r = repos("https://dl.bintray.com/cbeust/maven")
 
-fun buildTime() = java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").format(java.util.Date())
+val pl = plugins("com.beust:kobalt-retrolambda:0.6",
+        "com.beust:kobalt-android:0.6")
+
+fun buildTime() = ""//java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").format(java.util.Date())
 
 val p = javaProject {
 
