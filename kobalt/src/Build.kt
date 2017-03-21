@@ -6,19 +6,14 @@ import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.retrolambda.*
 import com.beust.kobalt.plugin.java.*
 
-//val r = repos("https://dl.bintray.com/cbeust/maven")
-
-val pl = plugins(
-//        file(homeDir("kotlin/kobalt-retrolambda/kobaltBuild/libs/kobalt-retrolambda-0.7.jar")),
-         "com.beust:kobalt-retrolambda:0.7",
-//        file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.7.jar"))
-        "com.beust:kobalt-android:0.7"
- )
+val bs = buildScript {
+    val pl = plugins("com.beust:kobalt-retrolambda:1.0.9","com.beust:kobalt-android:0.98")
+}
 
 // Note: this defeats incremental builds since the time changes every build
 fun buildTime() = java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").format(java.util.Date())
 
-val p = javaProject {
+val p = project {
 
     name = "u2020"
     group = "com.jakewharton.u2020"
