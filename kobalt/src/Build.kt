@@ -74,7 +74,7 @@ val p = project {
 
                 "com.jakewharton:butterknife:7.0.1",
                 "com.jakewharton.byteunits:byteunits:0.9.1",
-                "com.jakewharton.rxbinding:rxbinding:0.2.0@aar",
+                "com.jakewharton.rxbinding:rxbinding:aar:0.2.0",
                 "io.reactivex:rxjava:1.0.14",
                 "org.threeten:threetenbp:1.3.1",
 
@@ -83,15 +83,15 @@ val p = project {
                 "com.squareup.retrofit:adapter-rxjava-mock:2.0.0-beta2",
                 "com.jakewharton.madge:madge:1.1.2",
                 "com.jakewharton.scalpel:scalpel:1.1.2",
-                "com.jakewharton:process-phoenix:1.0.2@aar",
+                "com.jakewharton:process-phoenix:aar:1.0.2",
 
 
-                "io.reactivex:rxandroid:1.0.1@aar",
-                "com.f2prateek.rx.preferences:rx-preferences:1.0.0@aar",
-                "com.jakewharton.threetenabp:threetenabp:1.0.2@aar",
-                "com.jakewharton.timber:timber:4.0.1@aar",
-                "com.mattprecious.telescope:telescope:1.5.0@aar",
-                "com.squareup.leakcanary:leakcanary-android:1.3.1@aar"
+                "io.reactivex:rxandroid:aar:1.0.1",
+                "com.f2prateek.rx.preferences:rx-preferences:aar:1.0.0",
+                "com.jakewharton.threetenabp:threetenabp:aar:1.0.2",
+                "com.jakewharton.timber:timber:aar:4.0.1",
+                "com.mattprecious.telescope:telescope:aar:1.5.0",
+                "com.squareup.leakcanary:leakcanary-android:aar:1.3.1"
         )
     }
 
